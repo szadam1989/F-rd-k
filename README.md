@@ -1,2 +1,2 @@
-# F-rd-k
+# Furdok
 Felkészülés új OSAP adatgyűjtés feldolgozására

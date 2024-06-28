@@ -1,2 +1,2 @@
 # Furdok
-Felkészülés új OSAP adatgyűjtés feldolgozására
+Preparing for processing of new OSAP data collection

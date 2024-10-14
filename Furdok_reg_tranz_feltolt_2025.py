@@ -201,7 +201,7 @@ cur.executemany(output_insert_sql, regFurdok[["TEV", "MHO", "szolgaltatasi_hely_
 cur.execute("commit")
 
 
-# In[11]:
+# In[10]:
 
 
 #Nem W_ kezdetű regisztrációs tábla feltöltése
@@ -272,7 +272,7 @@ cur.executemany(output_insert_sql,
 cur.execute("commit")
 
 
-# In[13]:
+# In[11]:
 
 
 select_ID_SQ = "SELECT ID_SQ FROM GOA24.VK_2588_REG_V24H9_V_V00 where TEV = :TEV and MHO = :MHO order by ID_SQ"
@@ -284,7 +284,7 @@ ID_SQ_df = pd.DataFrame(ID_SQ_Values, columns = ["ID_SQ"])
 regFurdok.insert(loc = 0, column = "ID_SQ", value = ID_SQ_df)
 
 
-# In[14]:
+# In[12]:
 
 
 regUpdate("GOA24.VK_2588_REG_V24H9_V_V00", "szolgaltatas_tipusok", ";")#szolgaltatas_tipusok
@@ -299,6 +299,8 @@ regUpdate("GOA24.VK_2588_REG_V24H9_V_V00", "furdoegysegek", ",")#furdoegysegek
 regUpdate("GOA24.VK_2588_REG_V24H9_V_V00", "beautyszolgaltatasok", ",")#beautyszolgaltatasok
 regUpdate("GOA24.VK_2588_REG_V24H9_V_V00", "csaladbaratszolgaltatasok", ",")#csaladbaratszolgaltatasok
 regUpdate("GOA24.VK_2588_REG_V24H9_V_V00", "egeszsegmegorzoszolgaltatasok", ",")#egeszsegmegorzoszolgaltatasok
+regUpdate("GOA24.VK_2588_REG_V24H9_V_V00", "zuhanylehetosegek", ",")#zuhanylehetosegek
+regUpdate("GOA24.VK_2588_REG_V24H9_V_V00", "kolcsonzesilehetosegek", ",")#kolcsonzesilehetosegek
 
 
 # In[20]:

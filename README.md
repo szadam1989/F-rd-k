@@ -1,2 +1,2 @@
 # Furdok
-Preparing for processing of new OSAP data collection
+Preparing for processing of 2588 OSAP data collection
